@@ -10,4 +10,5 @@ for sack in elf_sacks_raw:
 	items = list(map(int, items))
 	elf_calories.append(sum(items))
 print(max(elf_calories))
+print( sum(sorted(elf_calories, reverse=True)[0:3]))
  
